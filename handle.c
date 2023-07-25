@@ -19,7 +19,7 @@ int handle(const char *fmt, int *i, va_list list, char buffer[],
 		{'c', print_char}, {'s', print_str}, {'%', print_percent},
 		{'i', print_int}, {'d', print_int}, {'b', print_binary},
 		{'u', print_unsigned}, {'o', print_octal}, {'x', print_hexadecimal},
-		{'X', print_hexa_upper}, {'p', print_address},{'S', print_unprintable},
+		{'X', print_hexa_upper}, {'p', print_pointer},{'S', print_unprintable},
 		{'r', print_rev}, {'R', print_rot13str}, {'\0', NULL}
 	};
 	for (n = 0; fmt_types[n].fmt != '\0'; n++)
