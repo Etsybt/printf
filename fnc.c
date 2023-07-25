@@ -87,7 +87,7 @@ int print_str(va_list list, char buffer[],
 int print_percent(va_list list, char buffer[],
 	int flags, int width, int precision, int size)
 {
-	UNUSED(types);
+	UNUSED(list);
 	UNUSED(buffer);
 	UNUSED(flags);
 	UNUSED(width);
