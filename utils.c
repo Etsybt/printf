@@ -52,35 +52,35 @@ int is_digit(char c)
 }
 
 /**
- * convert_num - Casts a number to the specified size
- * @n: Number to be casted.
+ * convert_size_number - Casts a number to the specified size
+ * @num: Number to be casted.
  * @size: Number indicating the type to be casted.
  *
  * Return: Casted value of num
  */
-long int convert_num(long int n, int size)
+long int convert_size_number(long int num, int size)
 {
-	if (size == Size_L)
-		return (n);
-	else if (size == Size_S)
-		return ((short)n);
+	if (size == S_LONG)
+		return (num);
+	else if (size == S_SHORT)
+		return ((short)num);
 
-	return ((int)n);
+	return ((int)num);
 }
 
 /**
- * convert_und - Casts a number to the specified size
- * @n: Number to be casted
+ * convert_size_unsgnd - Casts a number to the specified size
+ * @num: Number to be casted
  * @size: Number indicating the type to be casted
  *
  * Return: Casted value of num
  */
-long int convert_und(unsigned long int n, int size)
+long int convert_size_unsgnd(unsigned long int num, int size)
 {
-	if (size == Size_L)
-		return (n);
-	else if (size == Size_S)
-		return ((unsigned short)n);
+	if (size == S_LONG)
+		return (num);
+	else if (size == S_SHORT)
+		return ((unsigned short)num);
 
-	return ((unsigned int)n);
+	return ((unsigned int)num);
 }
