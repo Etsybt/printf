@@ -22,7 +22,7 @@ int handle_w_c(char a, char buffer[],
 	if (flags & Flag_ZERO)
 		padd = '0';
 
-	buffer[s++] = c;
+	buffer[s++] = a;
 	buffer[s] = '\0';
 
 	if (width > 1)
