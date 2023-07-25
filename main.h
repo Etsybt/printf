@@ -87,16 +87,16 @@ int print_rot13str(va_list list, char buffer[],
 	int flags, int width, int precision, int size);
 
 /* width handler */
-int handle_w_c(char c, char buffer[],
+int handle_w_c(char a, char buffer[],
 	int flags, int width, int precision, int size);
-int write_number(int is_positive, int ind, char buffer[],
+int write_number(int is_positive, int i, char buffer[],
 	int flags, int width, int precision, int size);
-int write_num(int ind, char bff[], int flags, int width, int precision,
-	int length, char padd, char extra_c);
-int write_pnt(char buffer[], int ind, int length,
+int write_num(int i, char bff[], int flags, int width, int precision,
+	int len, char padd, char extra_c);
+int write_pnt(char buffer[], int i, int len,
 	int width, int flags, char padd, char extra_c, int padd_start);
 
-int write_und(int is_negative, int ind,
+int write_und(int is_negative, int i,
 char buffer[],
 	int flags, int width, int precision, int size);
 
