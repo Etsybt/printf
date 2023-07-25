@@ -46,7 +46,7 @@ int print_pointer(va_list list, char buffer[],
 
 	index++;
 
-	return (write_pointer(buffer, index, len,
+	return (write_pnt(buffer, index, len,
 		width, flags, padd, extra_c, padd_start));
 }
 
