@@ -7,6 +7,7 @@
 
 #define UNUSED(x) (void)(x)
 #define BUFF_SIZE 1024
+#define INT_MAX
 
 #define Flag_MINUS 1
 #define Flag_PLUS 2
