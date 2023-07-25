@@ -18,20 +18,20 @@
 #define Size_S 1
 
 /**
- * struct format - Struct
+ * struct fmt - Struct
  *
- * @format: format
+ * @fmt: format
  * @f: function
  */
-struct format
+struct fmt
 {
-	char format;
+	char fmt;
 	int (*f)(va_list, char[], int, int, int, int);
 };
 
 
 /**
- * format format_t - Struct
+ * fmt fmt_t - Struct
  */
 typedef struct fmt fmt_t;
 
