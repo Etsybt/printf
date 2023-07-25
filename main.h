@@ -21,12 +21,12 @@
  * struct fmt - Struct
  *
  * @fmt: format
- * @f: function
+ * @fn: function
  */
 struct fmt
 {
 	char fmt;
-	int (*f)(va_list, char[], int, int, int, int);
+	int (*fn)(va_list, char[], int, int, int, int);
 };
 
 
